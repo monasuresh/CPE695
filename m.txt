@@ -1,0 +1,324 @@
+Question 1
+4 / 4 pts
+Which Linear Regression training algorithm is definitely NOT appropriate of you have a training data with a huge number of features (e.g., millions)?
+  Stochastic Gradient Descent 
+  Mini-batch Gradient Descent 
+  Batch Gradient Descent 
+Correct!
+  Normal equation 
+ 
+Question 2
+3 / 3 pts
+Can Gradient Descent get stuck in a local minimum when training a Logistic Regression model?
+  Yes 
+Correct!
+  No 
+  It depends 
+ 
+Question 3
+4 / 4 pts
+What of the following is NOT true regarding learning rate?
+  A learning rate is usually a relatively small number. 
+Correct!
+  A learning rate is usually a relatively large number. 
+  If a learning rate is too big, the training may not converge or converge very slowly. 
+  If a learning rate is too small, the training can converge very slowly. 
+ 
+Question 4
+4 / 4 pts
+When using SVM, we usually scale the inputs. What is the main reason for this?
+  SVM is sensitive to feature scales. 
+  SVM tends to ignore small features if not scaled. 
+  The decision boundary trained by SVM will be more accurate if inputs are appropriately scaled. 
+Correct!
+  All answer options are correct. 
+ 
+Question 5
+5 / 5 pts
+What is its precision?
+
+Actual Values	Predicted Results
+True	60	20
+False	40	70
+ 
+
+  0.25 
+  0.40 
+Correct!
+  0.60 
+  0.70 
+ 
+Question 6
+5 / 5 pts
+What is its recall?
+
+Actual Values	Predicted Results
+True	60	20
+False	40	70
+  0.25 
+  0.40 
+Correct!
+  0.75 
+  0.87 
+ 
+Question 7
+5 / 5 pts
+What is its F 1 -score
+
+Actual Values	Predicted Results
+True	60	20
+False	40	70
+  0.334 
+Correct!
+  0.667 
+  0.778 
+  0.875 
+ 
+Questions 8-15 consider training a decision tree using the training set S as follows:
+
+Sky	Temperature	Wind	EnjoySport
+Cloudy	High	Strong	Yes
+Cloudy	Low	Mild	No
+Sunny	Low	Mild	Yes
+Sunny	Low	Strong	No
+ 
+Question 8
+3 / 3 pts
+What is the sample entropy of the training set S?
+
+ 
+
+  0 
+  0.25 
+  0.5 
+Correct!
+  1.0 
+ 
+Question 9
+3 / 3 pts
+What is the information gain of attribute Sky over S?
+Correct!
+  0 
+  0.375 
+  0.625 
+  1 
+ 
+Question 10
+3 / 3 pts
+What is the information gain of attribute Temperature over S?
+  0 
+Correct!
+  0.3115 
+  0.6885 
+  1 
+ 
+Question 11
+6 / 6 pts
+Which of the following is the decision tree we will obtain using the training set S?
+  A.png 
+  B.png 
+  C.png 
+Correct!
+  D.png 
+ 
+Questions 12-15 use the decision tree obtained in Question 11.
+ 
+Question 12
+5 / 5 pts
+If we have a new example: (Sky = Cloudy, Temperature = Low, Wind = Strong), what is the predicted result of this example using the decision tree that we obtained in Question 11?
+  Yes 
+Correct!
+  No 
+ 
+Question 13
+5 / 5 pts
+What is the accuracy rate of the decision tree obtained in Question 11?
+  25% 
+  50% 
+  75% 
+Correct!
+  100% 
+ 
+Question 14
+5 / 5 pts
+Can the tree in Question 11 be further pruned without losing accuracy?
+  Yes 
+Correct!
+  No 
+  It depends 
+ 
+Question 15
+0 / 5 pts
+Does there exist another tree smaller than that in Question 11 which has the same accuracy?
+Correct Answer
+  Yes 
+You Answered
+  No 
+  It depends 
+ 
+Question 16
+5 / 5 pts
+Consider the following two-input perceptron. Now we want to choose appropriate weights of the inputs to turn the perceptron into a Boolean function 
+(A,B).
+
+16-18.png
+
+Which of the following weights can make 
+(A,B)=¬A ∧ B? 
+
+  W0 = 1, W1 = 1, W2 = 1
+  W0 = 0, W1 = -1, W2 = 1
+  W0 = 1, W1 = -3, W2 = 1
+Correct!
+  W0 = -1, W1 = -1, W2 = 1
+ 
+Question 17
+0 / 3 pts
+Consider the following two-input perceptron. Now we want to choose appropriate weights of the inputs to turn the perceptron into a Boolean function 
+(A,B).
+
+Can we train this perceptron using the gradient descent method?
+
+16-18.png
+
+You Answered
+  Yes 
+Correct Answer
+  No 
+ 
+Question 18
+5 / 5 pts
+Consider the following two-input perceptron. Now we want to choose appropriate weights of the inputs to turn the perceptron into a Boolean function 
+(A,B).
+
+Which of the following the Boolean function 
+(A,B) can NOT represent?
+
+16-18.png
+
+  AND 
+  OR 
+Correct!
+  XOR 
+  NAND 
+ 
+Question 19
+2 / 2 pts
+Consider below training error and test error observed as we train for a neural network using full (i.e., batch) gradient descent.
+
+Is there overfitting with the trained model?
+
+19-22.png 
+
+Correct!
+  Yes 
+  No 
+ 
+Question 20
+5 / 5 pts
+Consider below training error and test error observed as we train for a neural network using full (i.e., batch) gradient descent.
+
+Which of the following is NOT the possible cause of overfitting if it exists?
+
+19-22.png
+
+  The neural network model is too complex 
+  The neural network is trained for too many iterations 
+Correct!
+  here are too few hidden layers in the network 
+  The training data set is too small 
+ 
+Question 21
+5 / 5 pts
+Consider below training error and test error observed as we train for a neural network using full (i.e., batch) gradient descent.
+
+Which of the following is the appropriate technique to reduce overfitting?
+
+19-22.png
+
+  Train the model with more training data 
+  Reduce the model complexity, e.g., using less neurons at each layer 
+  Avoid training the model for too many iterations 
+Correct!
+  All of the above 
+ 
+Question 22
+5 / 5 pts
+Consider below training error and test error observed as we train for a neural network using full (i.e., batch) gradient descent.
+
+If we double the size of the training data, what can we expect with the new curves plotted for the training error and testing error respectively?
+
+19-22.png
+
+  Both training error and testing error will drop faster at early iterations. 
+  The overfitting (i.e., the gap between the two curves) will be reduced at iteration 20,000. 
+  The testing error will be smaller than the previous plot. 
+Correct!
+  All of the above. 
+ 
+Question 23
+3 / 3 pts
+Consider three classifiers that make the following predictions for a sample X. We want to make the final decision using the ensemble of the three classifiers.
+
+Sample x	Result
+Classifier 1	Class 1
+Classifier 2	Class 2
+Classifier 3	Class 1
+If we use the majority vote as the fusion function, what is our final decision?
+
+Correct!
+  Class 1 
+  Class 2 
+ 
+Question 24
+5 / 5 pts
+Consider three classifiers that make the following predictions for a sample X. We want to make the final decision using the ensemble of the three classifiers.
+
+Sample x	Result
+Classifier 1	Class 1
+Classifier 2	Class 2
+Classifier 3	Class 1
+If we use the weighted majority vote as the fusion function, what is our final decision? Given the following weights of the classifiers.
+
+Classifier 1: 0.2
+
+Classifier 2: 0.6
+
+Classifier 3: 0.2
+
+  Class 1 
+Correct!
+  Class 2 
+ 
+Question 25
+7 / 7 pts
+Consider three classifiers that make the following predictions for a sample X. We want to make the final decision using the ensemble of the three classifiers.
+
+Sample x	Result
+Classifier 1	Class 1
+Classifier 2	Class 2
+Classifier 3	Class 1
+If we use the Naïve Bayes method as the fusion function, what is our final decision? Given the following confusion matrix of the classifiers.
+
+i) Classifier 1
+
+Class 1	Class 2
+Class 1	70	10
+Class 2	30	50
+ 
+
+ii) Classifier 2
+
+Class 1	Class 2
+Class 1	80	10
+Class 2	20	70
+ 
+
+iii) Classifier 3
+
+Class 1	Class 2
+Class 1	60	10
+Class 2	40	40
+  Class 1 
+Correct!
+  Class 2 
